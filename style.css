@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+colors{
+    color: hsl(240, 38%, 20%);
+    color: hsl(240, 18%, 77%);
+}
+
+html{
+    font-size: 67.5%;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(0, 0%, 100%);
+    position: relative;
+}
+
+.user-profile{
+    width: 100%;
+    position: relative;
+}
+
+.hero{
+    width: 100%;
+    height: 30rem;
+    position: relative;
+    padding: 2rem;
+}
+
+.hero-bg{
+    width: 100%;
+    height: 100%;
+}
+
+.user-image-div{
+    width: 70%;
+    height: 21rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.user-image{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    box-shadow: 0 5px 25px rgb(0, 0, 0, .3);
+}
+
+.btn-container{
+    width: 10rem;
+    height: 5rem;
+    margin: -2rem auto;
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 0 35px rgb(0, 0, 0, .5);
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.btn-container:hover{
+    background-color: hsl(240, 18%, 77%);
+}
+
+.next-btn:hover,
+.previous-btn:hover{
+    filter: brightness(0) invert(1);
+}
+
+.previous-btn,
+.next-btn{
+    padding: 1rem;
+}
+
+.review-text-div{
+    text-align: center;
+    padding: 2.5rem;
+    margin-top: 2rem;
+}
+
+.quotes-img{
+    width: 8rem;
+    height: 6rem;
+    margin-bottom: -3rem;
+}
+
+.review-text{
+    font-weight: 100;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    color: hsl(240, 38%, 20%, .8);
+    line-height: 3.5rem;
+}
+
+.name{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    color: hsl(240, 38%, 20%);
+}
+
+.user-job{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: hsl(240, 18%, 77%);
+}
+
+.curve-img-div{
+    width: 100%;
+    height: 5rem;
+    background-image: url('./images/pattern-curve.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media only screen and (min-width: 768px){
+    .hero{
+        height: 45rem;
+    }
+
+    .user-image-div{
+        height: 33rem;
+    }
+
+    .review-text-div{
+        padding: 3.5rem;
+    }
+
+    .review-text{
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+
+    .name{
+        font-size: 2.8rem;
+        line-height: 4.5rem;
+    }
+    
+    .user-job{
+        font-size: 2.5rem;
+    }
+
+    .curve-img-div{
+        height: 11rem;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .user-profile{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+        
+    .hero{
+        width: 55%;
+        height: 54rem;
+    }
+
+    .user-image-div{
+        height: 40rem;
+    }
+
+    .user-image{
+        box-shadow: 0 5px 25px rgb(0, 0, 0, .1);
+    }
+
+    .btn-container{
+        left: 20%;
+        transform: translateX(-20%);
+    }
+
+    .review-text-div{
+        width: 40%;
+        text-align: left;
+        position: absolute; 
+        left: 27rem; 
+    }
+
+    .quotes-img{
+        margin: 0 0 -3rem 8rem;
+    }
+
+    .review-text{
+        font-size: 2.2rem; /*changed*/
+        line-height: 3.5rem; /*changed*/
+    }
+
+    .name{
+        font-size: 2rem; /*changed*/
+    }
+
+    .user-job{
+        font-size: 1.6rem; /*changed*/
+    }
+
+    .name-and-job{
+        display: flex;   /*changed*/
+        gap: 1rem;  /*changed*/
+        align-items: center;  /*changed*/
+    }
+
+    .curve-img-div{
+        height: 15rem;
+    }
+}
+
